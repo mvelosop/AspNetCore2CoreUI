@@ -18,4 +18,20 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Views\CoreUI\components-forms.cshtml" />
+    <None Include="Views\CoreUI\components-modals.cshtml" />
+    <None Include="Views\CoreUI\components-social-buttons.cshtml" />
+    <None Include="Views\CoreUI\components-switches.cshtml" />
+    <None Include="Views\CoreUI\components-tables.cshtml" />
+    <None Include="Views\CoreUI\components-tabs.cshtml" />
+    <None Include="Views\CoreUI\icons-font-awesome.cshtml" />
+    <None Include="Views\CoreUI\icons-simple-line-icons.cshtml" />
+    <None Include="Views\CoreUI\pages-404.cshtml" />
+    <None Include="Views\CoreUI\pages-500.cshtml" />
+    <None Include="Views\CoreUI\pages-login.cshtml" />
+    <None Include="Views\CoreUI\pages-register.cshtml" />
+    <None Include="Views\CoreUI\widgets.cshtml" />
+  </ItemGroup>
+
 </Project>
