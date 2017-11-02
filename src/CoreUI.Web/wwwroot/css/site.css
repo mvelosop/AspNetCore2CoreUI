@@ -1,6 +1,10 @@
-﻿body {
+﻿/*body {
     padding-top: 50px;
     padding-bottom: 20px;
+}*/
+
+h2 {
+    margin-top: 10px;
 }
 
 /* Wrapping element */
@@ -32,4 +36,8 @@
     .carousel-caption {
         display: none;
     }
+}
+
+.nav-pills .nav-link.active > a {
+    color: whitesmoke !important;
 }

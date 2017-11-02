@@ -12,6 +12,8 @@ namespace CoreUI.Web.Controllers
         [Route("{view=Index}")]
         public IActionResult Index(string view)
         {
+            ViewData["Title"] = "CoreUI - Open Source Bootstrap Admin Template";
+
             return View(view);
         }
     }
