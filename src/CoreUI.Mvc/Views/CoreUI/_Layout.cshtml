@@ -6,6 +6,9 @@
 * @@link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
+*
+* Adaptated to ASP.NET MVC Core 2.1 by Miguel Veloso
+* http://coderepo.blog
 -->
 
 <html lang="en">
@@ -388,13 +391,23 @@
         </li>
       </ol>
       <div class="container-fluid">
+        
+        <!-- view-styles -->
+        @RenderSection("Styles", required: false)
+        <!-- /view-styles -->
+
         <div class="animated fadeIn">
 
-          <!-- PAGE-CONTENT -->
+          <!-- view-content -->
           @RenderBody()
-          <!-- /PAGE-CONTENT -->
+          <!-- /view-content -->
 
         </div>
+
+        <!-- view-modals -->
+        @RenderSection("Modals", required: false)
+        <!-- /view-modals -->
+
       </div>
     </main>
     <aside class="aside-menu">
@@ -716,8 +729,9 @@
   <script src="~/lib/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
   <script src="~/lib/@@coreui/coreui/dist/js/coreui.min.js"></script>
 
-  <!-- Plugins and scripts required by the views-->
+  <!-- view-scripts -->
   @RenderSection("Scripts", required: false)
+  <!-- /view-scripts -->
 
 </body>
 </html>
