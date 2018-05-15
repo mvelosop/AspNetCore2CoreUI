@@ -59,20 +59,12 @@
       <button class="sidebar-minimizer brand-minimizer" type="button"></button>
     </div>
     <main class="main">
-      <!-- Breadcrumb-->
-      <ol class="breadcrumb">
-
-        <!-- BREADCRUMB-ITEMS -->
-        <partial name="_breadcrumb-items" />
-        <!-- /BREADCRUMB-ITEMS -->
-
-        <!-- BREADCRUMB-MENU -->
-        <partial name="_breadcrumb-menu" />
-        <!-- /BREADCRUMB-MENU -->
-
-      </ol>
 
       <partial name="_CookieConsentPartial" />
+
+      <!-- VIEW-BREADCRUMBS -->
+      @RenderSection("Breadcrumbs", required: false)
+      <!-- /VIEW-BREADCRUMBS -->
 
       <div class="container-fluid">
 

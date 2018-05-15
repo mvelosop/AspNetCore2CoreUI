@@ -1,0 +1,33 @@
+﻿@{ Layout = "_Layout"; }
+
+@* view-styles *@
+@section Styles {
+  @RenderSection("Styles", required: false)
+}
+
+@*view-breadcrumbs*@
+@section Breadcrumbs {
+  <ol class="breadcrumb">
+
+    <!-- BREADCRUMB-ITEMS -->
+    <partial name="_breadcrumb-items" />
+    <!-- /BREADCRUMB-ITEMS -->
+
+    <!-- BREADCRUMB-MENU -->
+    <partial name="_breadcrumb-menu" />
+    <!-- /BREADCRUMB-MENU -->
+
+  </ol>
+}
+
+@RenderBody()
+
+@* view-modals *@
+@section Modals {
+  @RenderSection("Modals", required: false)
+}
+
+@* view-scripts *@
+@section Scripts {
+  @RenderSection("Scripts", required: false)
+}
