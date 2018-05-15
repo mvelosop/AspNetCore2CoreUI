@@ -49,6 +49,8 @@
   <partial name="_app-header" />
   <!-- /APP-HEADER-->
 
+  <partial name="_CookieConsentPartial" />
+
   <div class="app-body">
     <div class="sidebar">
 
@@ -59,8 +61,6 @@
       <button class="sidebar-minimizer brand-minimizer" type="button"></button>
     </div>
     <main class="main">
-
-      <partial name="_CookieConsentPartial" />
 
       <!-- VIEW-BREADCRUMBS -->
       @RenderSection("Breadcrumbs", required: false)

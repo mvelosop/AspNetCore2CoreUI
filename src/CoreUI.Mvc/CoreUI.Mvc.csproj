@@ -13,7 +13,7 @@
 
 
   <ItemGroup>
-    <Content Update="Views\CoreUI\_Layout.cshtml">
+    <Content Update="Views\Shared\_Layout.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

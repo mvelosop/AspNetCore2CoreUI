@@ -31,3 +31,45 @@
 .breadcrumb {
     margin-bottom: 0;
 }
+
+.cookiebar {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    top: 0;
+    border-width: 0 0 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    display: block;
+}
+
+.cookiebar-header {
+    display: block;
+    float: left;
+}
+
+.cookiebar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.cookiebar-text {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cookiebar-buttons{
+    float: right !important;
+    margin-right: -15px;
+    margin-top: 8px;
+}
