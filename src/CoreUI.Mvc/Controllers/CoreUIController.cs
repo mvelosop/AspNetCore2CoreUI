@@ -6,12 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CoreUI.Mvc.Controllers
 {
-    [Route("{CoreUI}")]
+    [Route("CoreUI")]
     public class CoreUIController : Controller
     {
         [Route("{view=Index}")]
         public IActionResult Index(string view)
         {
+            ViewData["Title"] = "CoreUI Free Bootstrap Admin Template";
+
             return View(view);
         }
     }

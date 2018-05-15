@@ -1,75 +1,144 @@
 ﻿<!DOCTYPE html>
-<html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @@version v2.0.0
+* @@link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+*
+* Adaptated to ASP.NET Core MVC 2.1 by Miguel Veloso
+* http://coderepo.blog
+-->
+
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CoreUI.Mvc</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>@ViewData["Title"] - CoreUI.Mvc</title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+  <!-- Icons-->
+  <link href="~/lib/@@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+  <link href="~/lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+  <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="~/lib/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <environment include="Development">
+    <!-- Template styles -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/vendors/pace-progress/css/pace.css" rel="stylesheet">
+    <!-- styles tweaks -->
+    <link rel="stylesheet" href="~/css/site.css">
+  </environment>
+
+  <environment exclude="Development">
+    <!-- Template styles -->
+    <link href="~/css/style.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/vendors/pace-progress/css/pace.min.css" rel="stylesheet" asp-append-version="true">
+    <!-- styles tweaks -->
+    <link href="~/css/site.min.css" rel="stylesheet" asp-append-version="true">
+  </environment>
+
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CoreUI.Mvc</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-                <partial name="_LoginPartial" />
-            </div>
-        </div>
-    </nav>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
 
-    <partial name="_CookieConsentPartial" />
+  <!-- APP-HEADER-->
+  <partial name="_app-header" />
+  <!-- /APP-HEADER-->
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - CoreUI.Mvc</p>
-        </footer>
+  <div class="app-body">
+    <div class="sidebar">
+
+      <!-- SIDEBAR-NAV -->
+      <partial name="_sidebar-nav" />
+      <!-- /SIDEBAR-NAV -->
+
+      <button class="sidebar-minimizer brand-minimizer" type="button"></button>
     </div>
+    <main class="main">
+      <!-- Breadcrumb-->
+      <ol class="breadcrumb">
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+        <!-- BREADCRUMB-ITEMS -->
+        <partial name="_breadcrumb-items" />
+        <!-- /BREADCRUMB-ITEMS -->
 
-    @RenderSection("Scripts", required: false)
+        <!-- BREADCRUMB-MENU -->
+        <partial name="_breadcrumb-menu" />
+        <!-- /BREADCRUMB-MENU -->
+
+      </ol>
+
+      <partial name="_CookieConsentPartial" />
+
+      <div class="container-fluid">
+
+        <!-- VIEW-STYLES -->
+        @RenderSection("Styles", required: false)
+        <!-- /VIEW-STYLES -->
+
+        <div class="animated fadeIn">
+
+          <!-- VIEW-CONTENT -->
+          @RenderBody()
+          <!-- /VIEW-CONTENT -->
+
+        </div>
+
+        <!-- VIEW-MODALS -->
+        @RenderSection("Modals", required: false)
+        <!-- /VIEW-MODALS -->
+
+      </div>
+    </main>
+
+    <!-- ASIDE-MENU -->
+    <partial name="_aside-menu" />
+    <!-- /ASIDE-MENU -->
+
+  </div>
+  <footer class="app-footer">
+    <div>
+      <a href="https://coreui.io">CoreUI</a>
+      <span>&copy; 2018 creativeLabs.</span>
+    </div>
+    <div class="ml-auto">
+      <span>Powered by</span>
+      <a href="https://coreui.io">CoreUI</a>
+    </div>
+  </footer>
+
+  <environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  </environment>
+  <environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+    </script>
+  </environment>
+
+  <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="~/lib/popper.js/dist/umd/popper.min.js"></script>
+  <script src="~/lib/pace-progress/pace.min.js"></script>
+  <script src="~/lib/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="~/lib/@@coreui/coreui/dist/js/coreui.min.js"></script>
+
+  <environment include="Development">
+    <script src="~/js/site.js" asp-append-version="true"></script>
+  </environment>
+  <environment exclude="Development">
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+  </environment>
+
+  <!-- VIEW-SCRIPTS -->
+  @RenderSection("Scripts", required: false)
+  <!-- /VIEW-SCRIPTS -->
+
 </body>
 </html>
