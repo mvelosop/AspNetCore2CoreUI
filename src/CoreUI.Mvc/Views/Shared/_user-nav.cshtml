@@ -1,4 +1,10 @@
-﻿<li class="nav-item dropdown">
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+<li class="nav-item dropdown">
   <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
     <img class="img-avatar" src="~/images/avatars/6.jpg" alt="admin@bootstrapmaster.com">
   </a>
@@ -25,9 +31,11 @@
     <div class="dropdown-header text-center">
       <strong>Settings</strong>
     </div>
-    <a class="dropdown-item" href="#">
+
+    <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
       <i class="fa fa-user"></i> Profile
     </a>
+
     <a class="dropdown-item" href="#">
       <i class="fa fa-wrench"></i> Settings
     </a>
@@ -43,8 +51,17 @@
     <a class="dropdown-item" href="#">
       <i class="fa fa-shield"></i> Lock Account
     </a>
-    <a class="dropdown-item" href="#">
-      <i class="fa fa-lock"></i> Logout
-    </a>
+
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new {area = ""})" method="post" id="logoutForm">
+      <script>
+        function logout() {
+          $('#logoutForm').submit();
+        }
+      </script>
+      <a class="dropdown-item" href="javascript: void(0)" onclick="logout()">
+        <i class="fa fa-lock"></i> Logout
+      </a>
+    </form>
+
   </div>
 </li>

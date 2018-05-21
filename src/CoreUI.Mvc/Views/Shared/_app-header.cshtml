@@ -1,4 +1,9 @@
-﻿<header class="app-header navbar">
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<header class="app-header navbar">
   <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -14,33 +19,48 @@
   <partial name="_app-header-nav" />
   <!-- /APP-HEADER-NAV -->
 
-  <ul class="nav navbar-nav ml-auto">
-    <li class="nav-item d-md-down-none">
-      <a class="nav-link" href="#">
-        <i class="icon-bell"></i>
-        <span class="badge badge-pill badge-danger">5</span>
-      </a>
-    </li>
-    <li class="nav-item d-md-down-none">
-      <a class="nav-link" href="#">
-        <i class="icon-list"></i>
-      </a>
-    </li>
-    <li class="nav-item d-md-down-none">
-      <a class="nav-link" href="#">
-        <i class="icon-location-pin"></i>
-      </a>
-    </li>
+  @if (SignInManager.IsSignedIn(User))
+  {
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#">
+          <i class="icon-bell"></i>
+          <span class="badge badge-pill badge-danger">5</span>
+        </a>
+      </li>
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#">
+          <i class="icon-list"></i>
+        </a>
+      </li>
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#">
+          <i class="icon-location-pin"></i>
+        </a>
+      </li>
 
-    <!-- USER-NAV -->
-    <partial name="_user-nav" />
-    <!-- /USER-NAV -->
+      <!-- USER-NAV -->
+      <partial name="_user-nav" />
+      <!-- /USER-NAV -->
 
-  </ul>
-  <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    </ul>
+
+    <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  }
+  else
+  {
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item px-3">
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
+      </li>
+    </ul>
+  }
 </header>
