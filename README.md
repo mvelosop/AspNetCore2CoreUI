@@ -6,12 +6,12 @@ The [CoreUI Open Source Bootstrap 4 Admin Template](http://coreui.io/) was adapt
 
 This repo goes along with my blog posts:
 
-CoreUI v2.0.0 + ASP.NET MVC Core 2.1
+ASP.NET MVC Core 2.1 + CoreUI v2.0.0
 
 * **ENGLISH:** [Building elegant applications with ASP.NET Core MVC 2.1 and CoreUI 2 (Bootstrap 4)](http://www.coderepo.blog/posts/building-elegant-applications-aspnet-core-mvc-2.1-coreui-2-bootstrap-4/)
 * **SPANISH:** [Construyendo aplicaciones elegantes con ASP.NET Core MVC 2.1 y CoreUI 2 (Bootstrap 4)](http://www.coderepo.blog/posts/construyendo-aplicaciones-elegantes-aspnet-core-mvc-2.1-coreui-2-bootstrap-4/)
 
-CoreUI v1.0.4 + ASP.NET MVC Core 1.1
+ASP.NET MVC Core 1.1 + CoreUI v1.0.4
 
 * **ENGLISH:** [Building elegant applications with ASP.NET MVC Core 2 and Bootstrap 4 using CoreUI](http://www.coderepo.blog/posts/building-elegant-applications-aspnet-mvc-core-2-bootstrap-4-coreui/)
 * **SPANISH:** [Construyendo aplicaciones elegantes con ASP.NET MVC Core 2 y Bootstrap 4 usando CoreUI](http://www.coderepo.blog/posts/construyendo-aplicaciones-elegantes-aspnet-mvc-core-2-bootstrap-4-coreui/)
