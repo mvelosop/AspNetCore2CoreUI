@@ -16,5 +16,12 @@ namespace CoreUI.Mvc.Controllers
 
             return View(view);
         }
+        [Route("{subroute}/{view=Index}")]
+        public IActionResult Subroute(string subroute, string view)
+        {
+            ViewData["Title"] = "CoreUI Free Bootstrap Admin Template";
+
+            return View($"{subroute}/{view}");
+        }
     }
 }
