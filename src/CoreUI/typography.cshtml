@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @@version v2.0.0
+* @@version v2.1.15
 * @@link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -10,6 +10,7 @@
 
 <html lang="en">
   <head>
+    <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -25,6 +26,20 @@
     <!-- Main styles for this application-->
     <link href="~/css/style.css" rel="stylesheet">
     <link href="~/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">
@@ -105,7 +120,7 @@
               <i class="fa fa-file"></i> Projects
               <span class="badge badge-primary">42</span>
             </a>
-            <div class="divider"></div>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <i class="fa fa-shield"></i> Lock Account</a>
             <a class="dropdown-item" href="#">
@@ -145,67 +160,67 @@
                 <i class="nav-icon icon-puzzle"></i> Base</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-breadcrumb">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/breadcrumb">
                     <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-cards">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/cards">
                     <i class="nav-icon icon-puzzle"></i> Cards</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-carousel">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/carousel">
                     <i class="nav-icon icon-puzzle"></i> Carousel</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-collapse">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/collapse">
                     <i class="nav-icon icon-puzzle"></i> Collapse</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-forms">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/forms">
                     <i class="nav-icon icon-puzzle"></i> Forms</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-jumbotron">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/jumbotron">
                     <i class="nav-icon icon-puzzle"></i> Jumbotron</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-list-group">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/list-group">
                     <i class="nav-icon icon-puzzle"></i> List group</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-navs">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/navs">
                     <i class="nav-icon icon-puzzle"></i> Navs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-pagination">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/pagination">
                     <i class="nav-icon icon-puzzle"></i> Pagination</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-popovers">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/popovers">
                     <i class="nav-icon icon-puzzle"></i> Popovers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-progress">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/progress">
                     <i class="nav-icon icon-puzzle"></i> Progress</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-scrollspy">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/scrollspy">
                     <i class="nav-icon icon-puzzle"></i> Scrollspy</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-switches">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/switches">
                     <i class="nav-icon icon-puzzle"></i> Switches</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-tables">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/tables">
                     <i class="nav-icon icon-puzzle"></i> Tables</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-tabs">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/tabs">
                     <i class="nav-icon icon-puzzle"></i> Tabs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-tooltips">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/tooltips">
                     <i class="nav-icon icon-puzzle"></i> Tooltips</a>
                 </li>
               </ul>
@@ -215,19 +230,19 @@
                 <i class="nav-icon icon-cursor"></i> Buttons</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-buttons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/buttons">
                     <i class="nav-icon icon-cursor"></i> Buttons</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-button-group">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/button-group">
                     <i class="nav-icon icon-cursor"></i> Buttons Group</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-dropdowns">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/dropdowns">
                     <i class="nav-icon icon-cursor"></i> Dropdowns</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-brand-buttons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/brand-buttons">
                     <i class="nav-icon icon-cursor"></i> Brand Buttons</a>
                 </li>
               </ul>
@@ -241,21 +256,23 @@
                 <i class="nav-icon icon-star"></i> Icons</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-coreui-icons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/coreui-icons">
                     <i class="nav-icon icon-star"></i> CoreUI Icons
                     <span class="badge badge-success">NEW</span>
                   </a>
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-flags">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/flags">
                     <i class="nav-icon icon-star"></i> Flags</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-font-awesome">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/font-awesome">
                     <i class="nav-icon icon-star"></i> Font Awesome
                     <span class="badge badge-secondary">4.7</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-simple-line-icons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/simple-line-icons">
                     <i class="nav-icon icon-star"></i> Simple Line Icons</a>
                 </li>
               </ul>
@@ -265,15 +282,15 @@
                 <i class="nav-icon icon-bell"></i> Notifications</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications-alerts">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications/alerts">
                     <i class="nav-icon icon-bell"></i> Alerts</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications-badge">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications/badge">
                     <i class="nav-icon icon-bell"></i> Badge</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications-modals">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications/modals">
                     <i class="nav-icon icon-bell"></i> Modals</a>
                 </li>
               </ul>
@@ -346,9 +363,7 @@
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="card">
-              <div class="card-header">
-                Headings
-              </div>
+              <div class="card-header">Headings</div>
               <div class="card-body">
                 <p>Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.</p>
                 <table class="table">
@@ -424,9 +439,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-header">
-                Headings
-              </div>
+              <div class="card-header">Headings</div>
               <div class="card-body">
                 <p>
                   <code class="highlighter-rouge">.h1</code> through
@@ -442,9 +455,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-header">
-                Display headings
-              </div>
+              <div class="card-header">Display headings</div>
               <div class="card-body">
                 <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a
                   <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
@@ -477,15 +488,14 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-header">
-                Inline text elements
-              </div>
+              <div class="card-header">Inline text elements</div>
               <div class="card-body">
                 <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a
                   <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
                 <div class="bd-example">
                   <p>You can use the mark tag to
-                    <mark>highlight</mark> text.</p>
+                    <mark>highlight</mark> text.
+                  </p>
                   <p>
                     <del>This line of text is meant to be treated as deleted text.</del>
                   </p>
@@ -511,9 +521,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-header">
-                Description list alignment
-              </div>
+              <div class="card-header">Description list alignment</div>
               <div class="card-body">
                 <p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a
                   <code class="highlighter-rouge">.text-truncate</code> class to truncate the text with an ellipsis.</p>
@@ -521,19 +529,15 @@
                   <dl class="row">
                     <dt class="col-sm-3">Description lists</dt>
                     <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
-
                     <dt class="col-sm-3">Euismod</dt>
                     <dd class="col-sm-9">
                       <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
                       <p>Donec id elit non mi porta gravida at eget metus.</p>
                     </dd>
-
                     <dt class="col-sm-3">Malesuada porta</dt>
                     <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
-
                     <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
                     <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-
                     <dt class="col-sm-3">Nesting</dt>
                     <dd class="col-sm-9">
                       <dl class="row">
@@ -844,7 +848,7 @@
         <a href="https://coreui.io">CoreUI</a>
       </div>
     </footer>
-    <!-- Bootstrap and necessary plugins-->
+    <!-- CoreUI and necessary plugins-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/popper.js/dist/umd/popper.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
