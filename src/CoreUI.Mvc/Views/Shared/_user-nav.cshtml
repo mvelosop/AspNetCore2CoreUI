@@ -3,7 +3,6 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-
 <li class="nav-item dropdown">
   <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
     <img class="img-avatar" src="~/images/avatars/6.jpg" alt="admin@bootstrapmaster.com">
@@ -33,12 +32,10 @@
     </div>
 
     <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
-      <i class="fa fa-user"></i> Profile
-    </a>
 
+      <i class="fa fa-user"></i> Profile</a>
     <a class="dropdown-item" href="#">
-      <i class="fa fa-wrench"></i> Settings
-    </a>
+      <i class="fa fa-wrench"></i> Settings</a>
     <a class="dropdown-item" href="#">
       <i class="fa fa-usd"></i> Payments
       <span class="badge badge-secondary">42</span>
@@ -47,11 +44,9 @@
       <i class="fa fa-file"></i> Projects
       <span class="badge badge-primary">42</span>
     </a>
-    <div class="divider"></div>
+    <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="#">
-      <i class="fa fa-shield"></i> Lock Account
-    </a>
-
+    <i class="fa fa-shield"></i> Lock Account</a>
     <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new {area = ""})" method="post" id="logoutForm">
       <script>
         function logout() {
@@ -59,9 +54,9 @@
         }
       </script>
       <a class="dropdown-item" href="javascript: void(0)" onclick="logout()">
-        <i class="fa fa-lock"></i> Logout
-      </a>
+        <i class="fa fa-lock"></i> Logout</a>
     </form>
 
+    <a class="dropdown-item" href="#">
   </div>
 </li>

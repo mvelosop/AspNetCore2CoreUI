@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
-* @@version v2.0.0
+* @@version v2.1.15
 * @@link https://coreui.io
 * Copyright (c) 2018 creativeLabs Łukasz Holeczek
 * Licensed under MIT (https://coreui.io/license)
@@ -10,6 +10,7 @@
 
 <html lang="en">
   <head>
+    <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -25,6 +26,20 @@
     <!-- Main styles for this application-->
     <link href="~/css/style.css" rel="stylesheet">
     <link href="~/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">
@@ -105,7 +120,7 @@
               <i class="fa fa-file"></i> Projects
               <span class="badge badge-primary">42</span>
             </a>
-            <div class="divider"></div>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <i class="fa fa-shield"></i> Lock Account</a>
             <a class="dropdown-item" href="#">
@@ -145,67 +160,67 @@
                 <i class="nav-icon icon-puzzle"></i> Base</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-breadcrumb">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/breadcrumb">
                     <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-cards">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/cards">
                     <i class="nav-icon icon-puzzle"></i> Cards</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-carousel">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/carousel">
                     <i class="nav-icon icon-puzzle"></i> Carousel</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-collapse">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/collapse">
                     <i class="nav-icon icon-puzzle"></i> Collapse</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-forms">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/forms">
                     <i class="nav-icon icon-puzzle"></i> Forms</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-jumbotron">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/jumbotron">
                     <i class="nav-icon icon-puzzle"></i> Jumbotron</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-list-group">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/list-group">
                     <i class="nav-icon icon-puzzle"></i> List group</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-navs">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/navs">
                     <i class="nav-icon icon-puzzle"></i> Navs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-pagination">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/pagination">
                     <i class="nav-icon icon-puzzle"></i> Pagination</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-popovers">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/popovers">
                     <i class="nav-icon icon-puzzle"></i> Popovers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-progress">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/progress">
                     <i class="nav-icon icon-puzzle"></i> Progress</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-scrollspy">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/scrollspy">
                     <i class="nav-icon icon-puzzle"></i> Scrollspy</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-switches">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/switches">
                     <i class="nav-icon icon-puzzle"></i> Switches</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-tables">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/tables">
                     <i class="nav-icon icon-puzzle"></i> Tables</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-tabs">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/tabs">
                     <i class="nav-icon icon-puzzle"></i> Tabs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-tooltips">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base/tooltips">
                     <i class="nav-icon icon-puzzle"></i> Tooltips</a>
                 </li>
               </ul>
@@ -215,19 +230,19 @@
                 <i class="nav-icon icon-cursor"></i> Buttons</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-buttons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/buttons">
                     <i class="nav-icon icon-cursor"></i> Buttons</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-button-group">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/button-group">
                     <i class="nav-icon icon-cursor"></i> Buttons Group</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-dropdowns">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/dropdowns">
                     <i class="nav-icon icon-cursor"></i> Dropdowns</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons-brand-buttons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="buttons/brand-buttons">
                     <i class="nav-icon icon-cursor"></i> Brand Buttons</a>
                 </li>
               </ul>
@@ -241,21 +256,23 @@
                 <i class="nav-icon icon-star"></i> Icons</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-coreui-icons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/coreui-icons">
                     <i class="nav-icon icon-star"></i> CoreUI Icons
                     <span class="badge badge-success">NEW</span>
                   </a>
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-flags">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/flags">
                     <i class="nav-icon icon-star"></i> Flags</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-font-awesome">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/font-awesome">
                     <i class="nav-icon icon-star"></i> Font Awesome
                     <span class="badge badge-secondary">4.7</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons-simple-line-icons">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="icons/simple-line-icons">
                     <i class="nav-icon icon-star"></i> Simple Line Icons</a>
                 </li>
               </ul>
@@ -265,15 +282,15 @@
                 <i class="nav-icon icon-bell"></i> Notifications</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications-alerts">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications/alerts">
                     <i class="nav-icon icon-bell"></i> Alerts</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications-badge">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications/badge">
                     <i class="nav-icon icon-bell"></i> Badge</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications-modals">
+                  <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="notifications/modals">
                     <i class="nav-icon icon-bell"></i> Modals</a>
                 </li>
               </ul>
@@ -350,7 +367,7 @@
                 <div class="card text-white bg-primary">
                   <div class="card-body pb-0">
                     <div class="btn-group float-right">
-                      <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-settings"></i>
                       </button>
                       <div class="dropdown-menu dropdown-menu-right">
@@ -363,31 +380,31 @@
                     <div>Members online</div>
                   </div>
                   <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
-                    <canvas id="card-chart1" class="chart" height="70"></canvas>
+                    <canvas class="chart" id="card-chart1" height="70"></canvas>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-info">
                   <div class="card-body pb-0">
-                    <button type="button" class="btn btn-transparent p-0 float-right">
+                    <button class="btn btn-transparent p-0 float-right" type="button">
                       <i class="icon-location-pin"></i>
                     </button>
                     <div class="text-value">9.823</div>
                     <div>Members online</div>
                   </div>
                   <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
-                    <canvas id="card-chart2" class="chart" height="70"></canvas>
+                    <canvas class="chart" id="card-chart2" height="70"></canvas>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-warning">
                   <div class="card-body pb-0">
                     <div class="btn-group float-right">
-                      <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-settings"></i>
                       </button>
                       <div class="dropdown-menu dropdown-menu-right">
@@ -400,16 +417,16 @@
                     <div>Members online</div>
                   </div>
                   <div class="chart-wrapper mt-3" style="height:70px;">
-                    <canvas id="card-chart3" class="chart" height="70"></canvas>
+                    <canvas class="chart" id="card-chart3" height="70"></canvas>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-danger">
                   <div class="card-body pb-0">
                     <div class="btn-group float-right">
-                      <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-settings"></i>
                       </button>
                       <div class="dropdown-menu dropdown-menu-right">
@@ -422,14 +439,13 @@
                     <div>Members online</div>
                   </div>
                   <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
-                    <canvas id="card-chart4" class="chart" height="70"></canvas>
+                    <canvas class="chart" id="card-chart4" height="70"></canvas>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="row">
               <div class="col-sm-6 col-lg-3">
                 <div class="card">
@@ -443,7 +459,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card">
                   <div class="card-body">
@@ -456,7 +472,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card">
                   <div class="card-body">
@@ -469,7 +485,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card">
                   <div class="card-body">
@@ -482,10 +498,9 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="row">
               <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-primary">
@@ -499,7 +514,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-warning">
                   <div class="card-body">
@@ -512,7 +527,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-danger">
                   <div class="card-body">
@@ -525,7 +540,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-info">
                   <div class="card-body">
@@ -538,10 +553,9 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="row">
               <div class="col-md-2 col-sm-4">
                 <div class="card">
@@ -549,75 +563,74 @@
                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                     <div class="text-value-lg py-3">1,123</div>
                     <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas id="sparkline-chart-1" class="chart chart-bar" height="40" width="80"></canvas>
+                      <canvas class="chart chart-bar" id="sparkline-chart-1" height="40" width="80"></canvas>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-md-2 col-sm-4">
                 <div class="card">
                   <div class="card-body text-center">
                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                     <div class="text-value-lg py-3">1,123</div>
                     <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas id="sparkline-chart-2" class="chart chart-bar" height="40" width="80"></canvas>
+                      <canvas class="chart chart-bar" id="sparkline-chart-2" height="40" width="80"></canvas>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-md-2 col-sm-4">
                 <div class="card">
                   <div class="card-body text-center">
                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                     <div class="text-value-lg py-3">1,123</div>
                     <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas id="sparkline-chart-3" class="chart chart-bar" height="40" width="80"></canvas>
+                      <canvas class="chart chart-bar" id="sparkline-chart-3" height="40" width="80"></canvas>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-md-2 col-sm-4">
                 <div class="card">
                   <div class="card-body text-center">
                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                     <div class="text-value-lg py-3">1,123</div>
                     <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas id="sparkline-chart-4" class="chart chart-line" height="40" width="100"></canvas>
+                      <canvas class="chart chart-line" id="sparkline-chart-4" height="40" width="100"></canvas>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-md-2 col-sm-4">
                 <div class="card">
                   <div class="card-body text-center">
                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                     <div class="text-value-lg py-3">1,123</div>
                     <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas id="sparkline-chart-5" class="chart chart-line" height="40" width="100"></canvas>
+                      <canvas class="chart chart-line" id="sparkline-chart-5" height="40" width="100"></canvas>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-md-2 col-sm-4">
                 <div class="card">
                   <div class="card-body text-center">
                     <div class="text-muted small text-uppercase font-weight-bold">Title</div>
                     <div class="text-value-lg py-3">1,123</div>
                     <div class="chart-wrapper mx-auto" style="height:40px;width:80px">
-                      <canvas id="sparkline-chart-6" class="chart chart-line" height="40" width="100"></canvas>
+                      <canvas class="chart chart-line" id="sparkline-chart-6" height="40" width="100"></canvas>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="row">
               <div class="col-6 col-lg-3">
                 <div class="card">
@@ -630,7 +643,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-3 d-flex align-items-center">
@@ -642,7 +655,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-3 d-flex align-items-center">
@@ -654,7 +667,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-3 d-flex align-items-center">
@@ -666,7 +679,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-3 d-flex align-items-center">
@@ -684,7 +697,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-3 d-flex align-items-center">
@@ -702,7 +715,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-3 d-flex align-items-center">
@@ -720,7 +733,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-3 d-flex align-items-center">
@@ -738,10 +751,9 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="row">
               <div class="col-6 col-lg-3">
                 <div class="card">
@@ -754,7 +766,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-0 d-flex align-items-center">
@@ -766,7 +778,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-0 d-flex align-items-center">
@@ -778,7 +790,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-0 d-flex align-items-center">
@@ -790,7 +802,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-0 d-flex align-items-center">
@@ -802,7 +814,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-0 d-flex align-items-center">
@@ -814,7 +826,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-0 d-flex align-items-center">
@@ -826,7 +838,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-6 col-lg-3">
                 <div class="card">
                   <div class="card-body p-0 d-flex align-items-center">
@@ -838,10 +850,9 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="row">
               <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
@@ -863,7 +874,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
                   <div class="brand-card-header bg-twitter">
@@ -884,7 +895,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
                   <div class="brand-card-header bg-linkedin">
@@ -905,7 +916,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
                 <div class="brand-card">
                   <div class="brand-card-header bg-google-plus">
@@ -926,10 +937,9 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="card-group mb-4">
               <div class="card">
                 <div class="card-body">
@@ -992,7 +1002,6 @@
                 </div>
               </div>
             </div>
-
             <div class="row">
               <div class="col-sm-6 col-md-2">
                 <div class="card">
@@ -1008,7 +1017,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card">
                   <div class="card-body">
@@ -1023,7 +1032,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card">
                   <div class="card-body">
@@ -1038,7 +1047,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card">
                   <div class="card-body">
@@ -1053,7 +1062,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card">
                   <div class="card-body">
@@ -1068,7 +1077,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card">
                   <div class="card-body">
@@ -1083,10 +1092,9 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
-
+            <!-- /.row-->
             <div class="row">
               <div class="col-sm-6 col-md-2">
                 <div class="card text-white bg-info">
@@ -1102,7 +1110,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card text-white bg-success">
                   <div class="card-body">
@@ -1117,7 +1125,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card text-white bg-warning">
                   <div class="card-body">
@@ -1132,7 +1140,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card text-white bg-primary">
                   <div class="card-body">
@@ -1147,7 +1155,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card text-white bg-danger">
                   <div class="card-body">
@@ -1162,7 +1170,7 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
               <div class="col-sm-6 col-md-2">
                 <div class="card text-white bg-info">
                   <div class="card-body">
@@ -1177,11 +1185,10 @@
                   </div>
                 </div>
               </div>
-              <!--/.col-->
+              <!-- /.col-->
             </div>
-            <!--/.row-->
+            <!-- /.row-->
           </div>
-
         </div>
       </main>
       <aside class="aside-menu">
@@ -1480,7 +1487,7 @@
         <a href="https://coreui.io">CoreUI</a>
       </div>
     </footer>
-    <!-- Bootstrap and necessary plugins-->
+    <!-- CoreUI and necessary plugins-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/popper.js/dist/umd/popper.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>

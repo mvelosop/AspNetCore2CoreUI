@@ -21,3 +21,10 @@ In the blog posts I explain the process of adapting the [CoreUI](http://coreui.i
 I consider this a stepping stone on my way to Javascript front-end development, coming from a C# back-end background.
 
 Hope this can help you too on your way to become a better developer.
+
+To assist with Find and Replace to strip out header/footer from demo pages, use the following Regex with dotted newlines:
+
+.*<main class="main">.*?<div class="container-fluid">.*?<div class="animated fadeIn">(.*</div>\s*</div>\s*</div>\s*</div>).*?</main>.*
+
+replace with $1
+then unindent and verify encoding is UTF-8 BOM and that there's a trailing newline and no extra newline at the beginning of the file.
